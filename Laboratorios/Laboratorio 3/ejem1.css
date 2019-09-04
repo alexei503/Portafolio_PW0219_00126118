@@ -1,0 +1,14 @@
+
+    #example2>img{
+        width: 10em;
+        margin: 0.5em;
+    }
+
+    #example2{
+        display: flex;
+
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        border: 1px solid black;
+    }
