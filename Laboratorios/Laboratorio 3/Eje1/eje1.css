@@ -68,3 +68,38 @@ h1{
     grid-column: 5;
     grid-row: 5/7;
 }
+#img>.nine{
+    background: grey;
+    grid-column: 6;
+    grid-row: 5;
+}
+
+#img>.dies{
+    background: grey;
+    grid-column: 7;
+    grid-row: 5;
+}
+
+#img>.once{
+    background: grey;
+    grid-column: 8;
+    grid-row: 5;
+}
+
+#img>.doce{
+    background: grey;
+    grid-column: 6/9;
+    grid-row: 6;
+}
+
+#img>.trece{
+    background: grey;
+    grid-column: 1/5;
+    grid-row: 7/9;
+}
+
+#img>.catorce{
+    background: grey;
+    grid-column: 5/9;
+    grid-row: 7/9;
+}
