@@ -108,13 +108,17 @@ main{
 
 .logo>img:hover{
     opacity: 0.8;
+
+    @mixin fother($uno,$dos) {
+        width: $tamaño;
+        height: $auto;
+
+        display: $dis;
+
+        justify-content: $uno;
+        background: $dos;
+    }
 }
 footer{
-    width: $tamaño;
-    height: $auto;
-
-    display: $dis;
-
-    justify-content: space-between;
-    background: transparent;
+    @include fother(space-between,transparent)
 }

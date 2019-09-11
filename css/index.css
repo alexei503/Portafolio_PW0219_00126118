@@ -107,16 +107,4 @@ main {
 .logo > img:hover {
   opacity: 0.8;
 }
-
-footer {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: transparent;
-}
 /*# sourceMappingURL=index.css.map */
