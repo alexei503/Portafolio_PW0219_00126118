@@ -1,0 +1,120 @@
+$primary_color: #871901;
+$secon_color: #269cbf;
+$tree_color: #bf26aa;
+$distance: 5em;
+$dis:flex;
+$center: center;
+$tamaño :100%;
+$auto:auto;
+
+@mixin Background($validacion) {
+    padding: 1em 5%;
+    margin: 0%;
+    display: $dis;
+    flex-direction: column;
+    justify-content: space-between;
+    @if $validacion {
+        background-image: url(https://picsum.photos/id/1009/1920/1080);
+    }@else{
+        background: tomato;
+    }
+}
+
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+
+    @include Background(true);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+   
+}
+
+.btn{
+    border: 1px solid black
+}
+
+nav{
+    width: $tamaño;
+    height: $auto;
+    
+    display: $dis;
+
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  
+}
+
+
+
+
+.c1{
+    background-color: $primary_color;
+    color: white;
+    border-radius: 1em;
+}
+.c2{
+    background-color: $secon_color;
+    border-radius: 1em;
+}
+.c3{
+    background-color: $tree_color;
+    border-radius: 1em;
+}
+hr{
+    color: white;
+    width: 75%;
+}
+main{
+    width: 90%;
+    height: $auto;
+    
+    display: $dis;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content:center;
+}
+
+
+
+.logo{
+    width: $tamaño;
+    height: auto;
+    
+    display: $dis;
+
+    flex-flow: row wrap;
+    justify-content: center;
+
+        img{
+        width: $distance;
+        height: $distance;
+
+        margin: 0.5em;
+        border-radius:$tamaño ;
+        border-collapse: collapse;
+        }
+}
+
+
+
+.logo>img:hover{
+    opacity: 0.8;
+}
+footer{
+    width: $tamaño;
+    height: $auto;
+
+    display: $dis;
+
+    justify-content: space-between;
+    background: transparent;
+}
