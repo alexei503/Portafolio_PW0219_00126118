@@ -15,7 +15,7 @@ let addStudent = (carnet,schedule,late) =>{
     new_row.className = 'table-active'
     new_row.innerHTML = `<th scope='row'> ${carnet} </th> 
         <td> ${schedule} </td>  
-        <td> ${datetime.toLocaleDateString()}</td>
+        <td> ${datetime.toLocaleString()}</td>
         <td> ${late} </td>`
     table_body.appendChild(new_row)
 
